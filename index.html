@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>de-extinct</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/globals.css">
+    <style type="text/tailwindcss">
+        @layer base {
+            h1 {
+                @apply text-7xl font-bold text-stone-800;
+            };
+            h2 {
+                @apply text-3xl font-bold text-stone-800;
+            };
+            h3 {
+                @apply text-2xl font-bold text-stone-800;
+            };
+            h4 {
+                @apply text-xl font-bold text-stone-800;
+            };
+            h5 {
+                @apply text-lg font-bold text-stone-800;
+            };
+            p {
+                @apply max-w-prose
+            }
+            .text-secondary {
+                @apply text-stone-600;
+            };
+        }
+      </style>
+</head>
+
+<body class="px-6 sm:px-8 bg-slate-50 pb-24">
+    <header class="w-full">
+        <nav class="w-full flex py-3 items-center">
+            <div class="grow">
+                <a href="index.html">
+                    <h3>de-extinct</h3>
+                </a>
+            </div>
+            <div>
+                <ul class="list-none space-x-2">
+                    <li class="inline-block"><a href="./about.html">About</a></li>
+                    <li class="inline-block"><a href="./techniques.html">Techniques</a></li>
+                    <li class="inline-block"><a href="./ethics.html">Ethics</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="min-h-[200px] sm:min-h-[400px] flex items-center">
+        <div>
+            <h1>de-extinct</h1>
+            <h5 class="text-secondary">Genomics is enabling scientists to bring back extinct species. But should we?
+            </h5>
+        </div>
+    </section>
+    <section class="mt-12">
+        <div>
+            <h2>Techniques</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2">
+                <div class="col-span-1">
+                    <p >
+                        Advances in genomics have led to the feasibility of extinct species walking the earth once again. On
+                        this page, we explore these advances, including topics such as paleogenomics and CRISPR.
+                    </p>
+                    <button class="mt-4 bg-slate-800 text-slate-50 py-1.5 px-2 rounded-lg">
+                        <a href="./techniques.html">Learn More</a>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="mt-12">
+        <div>
+            <h2>Ethical Considerations</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2">
+                <div></div>
+                <div class="col-span-1">
+                    <p >
+                        Advances in genomics have led to the feasibility of extinct species walking the earth once again. On
+                        this page, we explore these advances, including topics such as paleogenomics and CRISPR.
+                    </p>
+                    <button class="mt-4 bg-slate-800 text-slate-50 py-1.5 px-2 rounded-lg">
+                        <a href="./ethics.html">Learn More</a>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
