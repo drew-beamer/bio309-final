@@ -1,3 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-4xl sm:text-7xl font-bold text-stone-800;
+    }
+
+    ;
+
+    h2 {
+        @apply text-2xl font-bold text-stone-800;
+    }
+
+    ;
+
+    h3 {
+        @apply text-xl font-bold text-stone-800;
+    }
+
+    ;
+
+    h4 {
+        @apply text-lg font-bold text-stone-800;
+    }
+
+    ;
+
+    h5 {
+        @apply text-base font-bold text-stone-800;
+    }
+
+    ;
+
+    p {
+        @apply max-w-prose indent-8 leading-relaxed;
+    }
+
+    .text-secondary {
+        @apply text-stone-600;
+    }
+
+    ;
+}
+
 body {
     background-color: #fff;
     color: #121212;
@@ -5,25 +51,61 @@ body {
     line-height: 1.42857;
 }
 
+.content-holder {
+    @apply px-8 sm:px-24 w-full;
+}
 
+.non-hero {
+    @apply relative top-16;
+}
+
+section {
+    @apply max-w-prose w-full mx-auto;
+}
+
+/* animations for the de-extinct on the home page */
 .fade-in {
     animation: fade 0.75s ease-in-out;
-    animation-delay: 1.5s;
+    animation-delay: 2s;
     animation-fill-mode: backwards;
 }
-
-
 
 .slide-right {
-    animation: slide-right 1s ease-in-out;
+    transition: none;
     animation-delay: 0.5s;
     animation-fill-mode: backwards;
+    animation: slide-right-mobile 1.5s ease-in-out normal;
+    animation-iteration-count: 1;
 }
+
+@media screen and (min-width: 640px) {
+    .slide-right {
+        animation: slide-right 1.5s ease-in-out !important;
+    }
+    .fade-in {
+        animation: fade-mobile 0.75s ease-in-out;
+        animation-delay: 2s;
+        animation-fill-mode: backwards;
+    }
+}
+
+
 
 @keyframes fade {
     0% {
         opacity: 0%;
     }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes fade-mobile {
+    0% {
+        opacity: 0%;
+    }
+
     100% {
         opacity: 100%;
     }
@@ -33,6 +115,17 @@ body {
     0% {
         transform: translateX(-122px);
     }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-right-mobile {
+    0% {
+        transform: translateX(-61px);
+    }
+
     100% {
         transform: translateX(0%);
     }
