@@ -6,3 +6,34 @@ body {
 }
 
 
+.fade-in {
+    animation: fade 0.75s ease-in-out;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
+}
+
+
+
+.slide-right {
+    animation: slide-right 1s ease-in-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-122px);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
