@@ -13,15 +13,15 @@
 </head>
 
 <body class=" bg-slate-50 pb-24 w-full">
-    <header class="w-full fixed px-6 sm:px-8 bg-slate-50 bg-opacity-95 z-50 h-16">
+    <header class="w-full fixed px-6 sm:px-8 bg-slate-50 bg-opacity-95 z-50 h-16 top-0">
         <nav class="w-full flex py-3 items-center">
             <div class="grow">
-                <a href="index.html">
+                <a href="/" class="hover:no-underline">
                     <h3>de-extinct</h3>
                 </a>
             </div>
             <div>
-                <ul class="list-none space-x-2">
+                <ul class="list-none space-x-2 nav-links">
                     <li class="inline-block"><a href="./about.html">About</a></li>
                     <li class="inline-block"><a href="./techniques.html">Techniques</a></li>
                     <li class="inline-block"><a href="./ethics.html">Ethics</a></li>
@@ -34,16 +34,46 @@
             <h1 class="mb-3">technology</h1>
             <h2>sequencing extinct genomes</h2>
             <p>
+                DNA degrades over time, in part due to a process called cytosine deamination. This process occurs when a
+                cytosine undergoes hydrolysis, and is converted to a uracil. If left unchecked, this creates G to A and
+                C to T mutations (Dabney CITATION) in the resulting reads. As such, cytosine deamination is a major
+                inhibitor to obtaining high-quality genomes for extinct species, and processes need to be in place to
+                address its effects.
+            </p>
+            <p>
                 Paleogenomics comprises a set of techniques for sequencing ancient genomes through the careful
                 extraction of preserved DNA samples. In contrast to modern genome sequencing from live samples,
                 paleogenomic research must take abundant precautions in order to avoid damaging samples. The risk of
                 losing a sample is far greater, as there is only a finite (and usually miniscule) amount of DNA that is
                 preserved well enough to be studied. Samples usually come from fossils or remains that have been
-                well-preserved by their environment.
+                well-preserved by their environment. For example, one group of researchers located preserved mammoth
+                bone samples and found a tooth with around 80% mammoth DNA content (Palkopoulou CITATION). This allowed
+                the researchers to use careful sequencing to extract the genome of the specimen without damaging the
+                DNA.
+            </p>
+            <p>
+                For more recently extinct species, well-preserved specimens may exist, enabling higher-quality
+                sequencing without additional paleogenomic steps. One example is the Tasmanian Tiger: a recent study
+                seeking to assemble the Tasmanian Tiger’s genome used samples from a 108 year old ethanol-preserved
+                specimen (Feigin CITATION). This study found no evidence of cytosine deamination, which they credit to
+                the method of preservation and the relatively young age of the sample.
             </p>
         </section>
         <section class="space-y-3 my-3">
             <h2>applications of CRISPR</h2>
+            <p>
+                CRISPR-Cas9 is an endonuclease system from bacteria that defends against bacteriophages. However, recent
+                research has revealed that the CRISPR system can be used by researchers to artificially modify DNA in
+                live cells with high accuracy (Jinek CITATION). The implications of this discovery for biological
+                research are immense; for de-extinction work, this means that reintroducing lost alleles to living
+                organisms is a viable way to increase biodiversity. CRISPR would also be a valuable tool in the
+                potential reconstruction of extinct genomes. One company called Colossal is currently working to use
+                CRISPR to stitch together DNA sequences from extinct organisms to construct a full genome (Colossal
+                CITATION). They then plan to create artificial embryos of these species to rebirth extinct lineages.
+            </p>
+        </section>
+        <section class="space-y-3 my-3">
+            <h2>references</h2>
         </section>
 
     </div>
