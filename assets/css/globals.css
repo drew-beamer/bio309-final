@@ -44,15 +44,28 @@
     ;
 }
 
-body {
+html, body {
     background-color: #fff;
     color: #121212;
     font-family: "Space Grotesk", Helvetica, Arial, sans-serif !important;
     line-height: 1.42857;
+    scroll-behavior: smooth;
 }
 
 a {
     @apply text-emerald-600 hover:underline;
+}
+
+button {
+    @apply hover:bg-stone-50 outline outline-1 outline-stone-800 transition-colors duration-200 ease-in-out;
+}
+
+button:hover a {
+    @apply text-stone-800;
+}
+
+button a {
+    @apply text-stone-50 hover:no-underline;
 }
 
 .nav-links a {
