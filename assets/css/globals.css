@@ -71,6 +71,10 @@ a {
     @apply relative top-16;
 }
 
+.reference {
+    @apply text-stone-600 text-sm my-2;
+}
+
 section {
     @apply max-w-prose w-full mx-auto;
 }

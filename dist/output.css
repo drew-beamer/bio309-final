@@ -809,6 +809,15 @@ a:hover {
   top: 4rem;
 }
 
+.reference {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(87 83 78 / var(--tw-text-opacity));
+}
+
 section {
   margin-left: auto;
   margin-right: auto;
