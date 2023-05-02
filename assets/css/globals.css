@@ -77,7 +77,7 @@ section {
 
 /* animations for the de-extinct on the home page */
 .fade-in {
-    animation: fade 0.75s ease-in-out;
+    animation: fade 2s ease-in-out;
     animation-delay: 2s;
     animation-fill-mode: backwards;
 }
@@ -95,7 +95,7 @@ section {
         animation: slide-right 1.5s ease-in-out !important;
     }
     .fade-in {
-        animation: fade-mobile 0.75s ease-in-out;
+        animation: fade-mobile 2s ease-in-out;
         animation-delay: 2s;
         animation-fill-mode: backwards;
     }
